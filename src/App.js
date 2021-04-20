@@ -2,6 +2,7 @@ import './App.less';
 import { Button } from './components/button';
 import { Link } from './components/links';
 import { Image } from './components/image';
+import { Title } from './components/title';
 
 export const App = () => {
   return (
@@ -14,6 +15,9 @@ export const App = () => {
 
       <h2>Image Test</h2>
       <Image alt='testImage' src='https://i.picsum.photos/id/980/200/300.jpg?hmac=HeQeE7MnUiOHTOqHUI4GrY3wL5tloq1zukVClSAcUB8' />
+
+      <h2>Title Test</h2>
+      <Title title='You clicked me' tag={3} />
     </div>
   );
 }

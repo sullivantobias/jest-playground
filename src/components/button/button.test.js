@@ -8,11 +8,14 @@ configure({ adapter: new Adapter() });
 describe('Button component', () => {
     it('Button text changes and equal the props when clicked', () => {
         const component = mount(<Button clickedText="You clicked on me" />);
+        const buttonText = component.text();
+        const buttonTextProps = component.props().clickedText;
 
-        expect(component.text()).toEqual('Click on me')
+        expect(buttonText).toEqual('Click on me')
 
         component.simulate('click');
 
-        expect(component.text()).toEqual(component.props().clickedText)
+        const buttonTextClicked = component.text();
+        expect(buttonTextClicked).toEqual(buttonTextProps)
     });
 });
