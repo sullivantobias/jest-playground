@@ -3,6 +3,7 @@ import { Button } from './components/button';
 import { Link } from './components/links';
 import { Image } from './components/image';
 import { Title } from './components/title';
+import { Tabs } from './components/tabs';
 
 export const App = () => {
   return (
@@ -18,6 +19,14 @@ export const App = () => {
 
       <h2>Title Test</h2>
       <Title title='You clicked me' tag={3} />
+
+      <h2>Tabs Test</h2>
+      <Tabs tabs={
+        [
+          { title: 'Tab1', content: 'Tab1 Content' },
+          { title: 'Tab2', content: 'Tab2 Content' },
+          { title: 'Tab3', content: 'Tab3 Content' }
+        ]} />
     </div>
   );
 }
