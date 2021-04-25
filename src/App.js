@@ -4,6 +4,7 @@ import { Link } from './components/links';
 import { Image } from './components/image';
 import { Title } from './components/title';
 import { Tabs } from './components/tabs';
+import { Comments } from './components/comments';
 
 export const App = () => {
   return (
@@ -27,6 +28,9 @@ export const App = () => {
           { title: 'Tab2', content: 'Tab2 Content' },
           { title: 'Tab3', content: 'Tab3 Content' }
         ]} />
+
+      <h2>Comments Test</h2>
+      <Comments />
     </div>
   );
 }
